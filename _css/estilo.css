@@ -1,0 +1,802 @@
+@charset "UTF-8";
+
+html
+{   height: 100%;   }
+
+body
+{
+    font-family: sans-serif;
+    background-color: white;
+    margin: 0px auto 0px auto;
+    height: 100%;
+}
+
+body#corpo_imagem
+{
+    background-color: white;
+}
+
+div#corpo
+{
+    min-height: 90%;
+    position: relative;
+    background-color: white;
+    width: 90%;
+    height: auto;
+    margin: auto;
+    margin-top: -20px;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    overflow-y: hidden;;
+}
+
+/* ESTILO DO CABEÇALHO */
+
+/* estilo da logo */
+header#cabecalho figure
+{
+    margin: 0px;
+}
+
+header#cabecalho img
+{
+    margin: 10px;
+}
+
+header#cabecalho figcaption
+{
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+}
+
+/* estilo do menu */
+
+nav#menu ul
+{
+    position: absolute;
+    top: -20px;
+    left: 500px;
+    list-style: none;
+    text-transform: uppercase;
+    /*border-bottom: 1px solid #97B760;*/
+    padding: 0px;
+}
+
+nav#menu li
+{
+    display: inline-block;
+    background-color: #FFA879;
+    padding: 10px;
+    margin: 2px;
+    transition: background-color 1s;
+}
+
+nav#menu li:hover
+{
+    background-color: #A03800;
+}
+
+nav#menu a
+{
+    text-decoration: none;
+    color: #F26D26;
+}
+
+nav#menu a:hover
+{
+    color: #F0F8E2;
+}
+
+/* ESTILO DO NAVEGADOR */
+nav#navegacao
+{
+    width: 90%;
+    margin: 0px auto 0px auto;
+    border-top: 1px solid #F26D26;
+    text-align: left;
+    padding: 5px;
+}
+
+nav#navegacao ul
+{
+    padding: 0px;
+    list-style: none;
+}
+
+nav#navegacao li
+{
+    display: inline-block;
+}
+
+nav#navegacao a
+{
+    color: #FFA879;
+}
+
+/* ESTILO DO LOGIN */
+
+div#login
+{
+    margin: 10px 0px 0px 415px;
+    background: #f2f2f2 none repeat scroll 0 0;
+    float: left;
+    background: #f2f2f2 none repeat scroll 0 0;
+    width: 35%;
+    height: 35%;
+    padding: 20px;
+    text-align: justify;
+    border: 1px solid #e6e6e6;
+    
+}
+
+div#nome
+{
+    margin-bottom: 10px;
+    margin-left: 15%
+}
+
+div#senha
+{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 15%
+}
+
+div#entrar
+{
+    margin-top: 10px;
+}
+
+/* ESTILO DA PÁGINA DE PRODUTOS */
+
+p#com_produto
+{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+}
+
+p#sem_produto
+{
+    width: 20%;
+    text-align: center;
+    margin: auto;
+}
+
+p#sem_produto a
+{
+    font-size: 30px;
+    color: red;
+    text-decoration: none;
+}
+
+p#sem_produto a:hover
+{
+    font-size: 36px;
+}
+
+div#s_produto
+{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+}
+
+div#c_produto
+{
+    width: 90%;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+div#categorias
+{
+    width: 20%;
+    padding: 20px;
+    float:left;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+div#categorias h1
+{
+    font-size: 18pt;
+    color: #CA4D0A;
+    border-top: 1px solid #F26D26;
+    padding-top: 20px;
+}
+
+div.item_categoria
+{
+    width: auto;
+    color: #FF8D51;
+    font-size: 14pt;
+    margin: 10px auto 10px auto;
+    text-align: left;
+    transition: margin-left 5s;
+}
+
+div.item_categoria:hover
+{
+    margin-left: 10px;
+}
+
+div#produtos
+{
+    width: 80%;
+    float:left;
+    border-left: 1px solid #F26D26;
+    box-sizing: border-box;
+}
+
+div#filtro
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px
+}
+
+div#itens
+{
+    width: 100%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div.item_produto
+{
+    width: 30%;
+    /*height: 450px;*/
+    margin: 10px;
+    float: left;
+    text-align: center;
+    border: 1px solid #FFA879;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div.item_produto:hover
+{
+    border: 1px solid #F26D26;
+}
+
+div.item_produto img
+{
+    width: 180px;
+    height: 150px;
+}
+
+div.item_produto p
+{
+    font-size: 12pt;
+    font-weight: bolder;
+}
+
+div.dado_preco
+{
+    font-size: 14pt;
+    color: #CA4D0A;
+    font-weight: bolder;
+}
+
+div.dado_validade
+{
+    margin: 5px auto 5px auto;
+    font-size: 10pt;
+    color: gray;
+}
+
+div.dado_descricao
+{
+    margin: 5px auto 10px auto;
+    font-size: 12pt;
+}
+
+p#filtro_s_r
+{
+    width: 100%;
+    font-size: 20pt;
+    text-align: center;
+    color: red;
+}
+
+/* ESTILO DA PÁGINA DE ADIÇÃO DE PRODUTOS */
+
+div#add_produto
+{
+    width: 90%;
+    margin: auto;
+    margin-top: 80px;
+}
+
+div#formulario
+{
+    width: 40%;
+    float:left;
+    border-right: 1px solid #F26D26;
+    box-sizing: border-box;
+}
+
+div#add_imagem
+{
+    width: 150px;
+    height: 250px;
+    text-align: center;
+    margin: 0px 20px 0px 0px;
+    float:left;
+    box-sizing: border-box;
+}
+
+figure#img_produto
+{
+    position: relative;
+    width: 100%;
+    height: 80%;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+figure#img_produto img
+{
+    width: 100%;
+    height: 100%;
+}
+
+div#add_imagem input
+{
+    margin-top: 2px;
+}
+
+figure#img_produto figcaption
+{
+    padding-top: 75px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 14pt;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    opacity: 0;
+    transition: opacity .5s;
+}
+
+figure#img_produto input
+{
+    position: absolute;
+    opacity: 0;
+}
+
+figure#img_produto input:hover
+{
+    opacity: 1;
+}
+
+figure#img_produto [id=prev]
+{
+    top: 90px;
+    left: 0px;
+}
+
+figure#img_produto [id=next]
+{
+    top: 90px;
+    left: 112px;
+}
+
+div#inputs
+{
+    float:left;
+}
+
+div#r_inputs
+{
+    clear:both;
+    padding-top: 10px;
+}
+
+div#op_form
+{
+    text-align: right;
+    padding: 5px;
+}
+
+div#visualizar
+{
+    width: 60%;
+    float:left;
+    box-sizing: border-box;
+}
+
+div#add_menu
+{
+    width: 100%;
+    text-align: center;
+    clear: both;
+    padding-bottom: 10px;
+}
+
+div.direita
+{
+    float: left;
+    width: 100%;
+    text-align: right;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* ESTILO DE EDIÇÃO DE PRODUTO */
+
+div.v_item_produto
+{
+    width: 30%;
+    height: 450px;
+    margin: 10px;
+    float: left;
+    text-align: center;
+    /*border: 1px solid #C0DA93;*/
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div.v_item_produto img
+{
+    width: 160px;
+    height: 130px;
+}
+
+div#formulario_edt
+{
+    width: 40%;
+    margin:auto;
+    box-sizing: border-box;
+    margin-top: 70px
+}
+
+div#op_form_edt
+{
+    width: 100%;
+    clear: both;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* ESTILO PARA PÁGINA DE PERFIL */
+
+/*margin:10px 5px 15px 20px;
+top margin is 10px
+right margin is 5px
+bottom margin is 15px
+left margin is 20px*/
+header#cabecalho_perfil
+{
+    width: 70%;
+    margin: 150px 0px 35px 200px;
+    /*box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);*/
+    text-align: center;
+    padding-bottom: 10px;
+    background: #f2f2f2 none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+}
+
+header#cabecalho_perfil img
+{
+    margin: 50px auto 0px auto;
+}
+
+header#cabecalho_perfil figure
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/*padding:10px 5px 15px 20px;
+top padding is 10px
+right padding is 5px
+bottom padding is 15px
+left padding is 20px*/
+
+header#cabecalho_perfil figcaption
+{
+  /*  opacity: 0;*/
+  margin : 10px  0px 0px 0px;
+}
+
+
+header#cabecalho_perfil h1
+{
+    font-size: 24pt;
+    color: #CA4D0A;
+    margin: 0px auto 10px auto;
+}
+
+
+
+figcaption{
+    font-size: 12pt;
+    color: #00000;
+    margin-left: 18%;
+    margin-top:13%;
+
+}
+
+
+header{
+   background-image: url(../_imagens/fundo-laranja.png);
+   width: 100%;
+}
+
+img{
+    width: 50%;   
+}
+
+.logo{
+    margin-left: 20em;
+       
+}
+
+#informativo1{
+    float: left;
+    background: #f2f2f2 none repeat scroll 0 0;
+    width: 35%;
+    height: 40%;
+    padding: 20px;
+    text-align: justify;
+    margin-left: 120px;
+    border: 1px solid #e6e6e6;
+    
+}
+
+#informativo2{
+    float: right;
+    background: #f2f2f2 none repeat scroll 0 0;
+    width: 35%;
+    height: 35%;
+    padding: 20px;
+    text-align: justify;
+    border: 1px solid #e6e6e6;
+    margin-right: 100px;
+}
+
+#sobre1{
+    float: left;
+    background: ;
+    width: 35%;
+    height: 40%;
+    padding-left: 40px;
+    margin-left: 60px;
+    text-align: justify;
+}
+
+
+#sobre2{
+    float: right;
+    background: ;
+    width: 35%;
+    height: 40%;
+    padding-left: 50px  ;
+    padding-right: 20px;
+    margin-right: 10%;
+    text-align: justify;
+
+}
+
+#meuMercadinho{
+    padding-left: 20%;
+    padding-right:60% 
+}
+div#info1
+{
+    width: 70%;
+    margin: 10px auto 10px auto;
+}
+
+div#info1 h1
+{
+    font-size: 18pt;
+    color: #CA4D0A;
+    margin: 0px auto 20px auto;
+}
+
+div#info_basica
+{
+    padding: 20px;
+    width: 30%;
+    float: left;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    margin-bottom: 10px;
+    margin-left:15%;
+    background: #f2f2f2 none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+}
+
+div#info_basica div
+{
+    margin: 15px auto 15px auto;
+}
+
+div#endereco
+{
+    padding: 20px;
+    width: 30%;
+    float: right;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    margin-bottom: 40px;
+    margin-right: 15%;
+    background: #f2f2f2 none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+}
+
+div#endereco div
+{
+    margin: 10px auto 10px auto;
+}
+
+div#entrega
+{
+    padding: 20px;
+    width: 70%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    margin:auto;
+    box-sizing: border-box;
+    background: #f2f2f2 none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+    clear: both;
+}
+
+
+div#entrega div
+{
+    margin: 10px auto 10px auto;
+}
+
+div#entrega h1
+{
+    font-size: 18pt;
+    color: #CA4D0A;
+    margin: 0px auto 20px auto;
+    text-align: center;
+}
+
+div#dados_sem_servico_entrega
+{
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+}
+
+.lbl_info
+{
+    font-size: 12pt;
+    color: #FFA879;
+}
+
+.lbl_dado
+{
+    font-size: 16pt;
+}
+
+div#opcoes
+{
+    text-align: center;
+    width: 70%;
+    margin: 50px auto 0px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    background: #f2f2f2 none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+}
+
+
+/*ESTILO DA EDIÇÃO DO PERFIL*/
+div#info_basica_edit
+{
+    padding: 30px;
+    width: 30%;
+    float: left;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, .5);
+    margin-bottom: 10px;
+    margin-left:15%;
+    background: #f2f2f2 none repeat scroll 0 0;
+    border: 1px solid #e6e6e6;
+}
+
+
+div#info_basica_edit div
+{
+    margin: 15px auto 15px auto;
+}
+
+
+/* ESTILO DA PÁGINA DE ESCOLHA DE IMAGEM */
+
+div#imagens
+{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+div#item_imagem img
+{
+    width: 100%;
+    height: 200px;
+    box-sizing: border-box;
+}
+
+div#item_imagem
+{
+    width: 20%;
+    text-align: center;
+    float:left;
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #F26D26;
+}
+
+div#item_imagem input
+{
+    margin-top: 10px;
+}
+
+div#item_imagem label
+{
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ESTILO DO RODAPÉ*/
+
+footer#rodape
+{   
+    background:rgb(0,0,0); 
+    margin-top: 50%;
+    height:70px;
+    clear: both;
+    color:white;
+    padding-top:20px;
+    padding-left:2%;
+    text-align:center
+
+
+
+
+}
+
+/* CLASSES */
+
+div.center
+{
+    text-align: center;
+}
+
+span.lbl_grande
+{
+    font-size: 16pt;
+    font-weight: bold;
+    color: #CA4D0A;
+}
+
+/*responsive*/
+
+
+
+
